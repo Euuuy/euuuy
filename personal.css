@@ -1,0 +1,69 @@
+body{
+    background: lightsteelblue;
+}
+.header{
+    background-color:rgb(28, 47, 71);
+    width: 100%;
+    height: 160px;
+}
+.header .logo img{
+    width: 140px;
+    height: 140px;
+    margin-left: 50px;
+    float: left;
+    border-radius: 100%;
+    margin-top: 10px;
+}
+.header .menu{
+    height: 100px;
+    float: left;
+}
+.header .menu ul{
+    margin-left: 200px;
+}
+.header .menu li{
+    float: left;
+    list-style-type: none;
+    width: 200px;
+    font-family: "宋体";
+    color: lightyellow;
+    font-size: 30px;
+    line-height: 100px;
+    font-weight: bold;
+    text-align: center;
+}
+.header  a{
+    color: lightgoldenrodyellow;
+}
+.header  a:hover{
+    color: lightgoldenrodyellow;
+    background-color: lightskyblue;
+}
+.word{
+    font-size: 35px;
+    color: darkgoldenrod;
+    font-family: 仿宋;
+    font-weight: bold;
+    float: right;
+    margin-top: 20px;
+}
+.show{
+    margin-top: 70px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.show img{
+    margin-bottom: 100px;
+    width: 80%;
+}
+.footer{
+    width: 100%;
+    height: 150px;
+    background-color: #5B7FA7;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 40px;
+    font-family: "宋体";
+    font-size: 18px;
+}
