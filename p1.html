@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>是小丁</title>
+    <link rel="stylesheet" type="text/css" href="personal.css">
+</head>
+
+
+    <style>
+  
+        #tab{
+            overflow:hidden; 
+            width:700px;
+            height:700px; 
+            position:relative;
+            float: left;
+        }
+        #tab>img:not(:first-child){ display:none; }
+      
+   .audio{
+       float: right;
+   }
+   </style>
+
+
+<script> 
+    window.onload = function(){ 
+        var images = document.getElementsByTagName('img'); 
+        var pos = 0; 
+        var len = images.length; 
+        setInterval(function(){ 
+            images[pos].style.display = 'none';  
+            pos = ++pos == len ? 0 : pos; 
+            images[pos].style.display = 'inline';   
+        },1000); 
+    }; 
+
+</script>
+</head>
+
+    <body>
+        <div class="header">
+            <div class="menu">
+                <ul>
+                    <li><a href="personal.html">丁玥</a> </li> 
+                    <li>AKA小丁</li>
+                    <li>201916180101</li>
+                    <li><a href="p1.html">先点这儿</a></li>
+                    <li><a href="p2.html">然后是TROYE</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="word">普普通通的大学生<br>ǝɯ ɹǝqɯǝɯǝɹ noʎ ǝdoɥ </div>
+        <audio controls="controls" autoplay="autoplay">
+            <source src="D:\nginx-1.18.0\html\1.mp3" type="audio/mpeg">
+        </audio>
+
+<div id="tab"> 
+    <img src="D:\nginx-1.18.0\html\images\a5.png" width="700px" height="00px"/> 
+    <img src="D:\nginx-1.18.0\html\images\a6.jpg" width="700px" height="700px"/> 
+    <img src="D:\nginx-1.18.0\html\images\a7.jpg" width="700px" height="700px"/>
+    <img src="D:\nginx-1.18.0\html\images\a8.jpg" width="700px" height="700px"/>
+    <img src="D:\nginx-1.18.0\html\images\a10.jpg" width="700px" height="700px"/>
+</div>
+
+</body>
+</html>
