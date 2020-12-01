@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美味欣赏</title>
+    <style>
+        a {
+            text-decoration: none;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-image: url(images/n.jpg);
+            background-repeat:no-repeat;
+            background-attachment: fixed;
+            background-origin: border-box;
+            background-size:cover;
+        }
+        .header {
+            height: 100px;
+            width: 100%;
+            
+        }
+        .header-box {
+            height: 100px;
+            line-height: 100px;
+            font-size: 20px;
+            margin-left: 70px;
+            float: left;
+            font-weight: bolder;
+        }
+        .header-first a {
+            color:grey;
+        }
+        .header-first {
+            height: 100px;
+        }
+        .header-first a:hover {
+            color: lightskyblue;
+        }
+        #tab{
+            overflow:hidden; 
+            width:600px;
+            height:615px; 
+            position:relative;
+            float: left;
+            border:1px solid lemonchiffon; } 
+        #tab>img:not(:first-child){ display:none; }
+      
+    </style>
+
+
+<script> 
+    window.onload = function(){ 
+        var images = document.getElementsByTagName('img'); 
+        var pos = 0; 
+        var len = images.length; 
+        setInterval(function(){ 
+            images[pos].style.display = 'none';  
+            pos = ++pos == len ? 0 : pos; 
+            images[pos].style.display = 'inline';   
+        },1000); 
+    }; 
+
+</script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-first">
+            <div class="header-box">201916180101 丁玥</div> 
+            <a href="丁玥.html"><div class="header-box">最爱的美食</div></a>
+            <a href="jianjie.html"><div class="header-box">奶茶的简介</div></a>
+            <a href="sort.html"><div class="header-box">奶茶的推荐</div></a>
+            <a href="pingjia.html"><div class="header-box">评价</div></a>
+            <a href="photo.html"><div class="header-box">美味欣赏</div></a>
+            <a href=""><div class="header-box">上一位是201916180131 吴佳奇</div></a>
+        </div>
+    </div>
+
+<div id="tab"> 
+    <img src="D:\nginx-1.18.0\html\images\nc8.jpg" width="600" height="615"/> 
+    <img src="D:\nginx-1.18.0\html\images\nc9.jpg" width="600" height="615"/> 
+    <img src="D:\nginx-1.18.0\html\images\nc10.jpg" width="600" height="615"/>
+    <img src="D:\nginx-1.18.0\html\images\nc11.jpg" width="600" height="615"/>
+    <img src="D:\nginx-1.18.0\html\images\nc12.jpg" width="600" height="615"/>
+    <img src="D:\nginx-1.18.0\html\images\nc13.jpg" width="600" height="615"/>
+    <img src="D:\nginx-1.18.0\html\images\nc.jpg" width="600" height="615"/>
+    <img src="D:\nginx-1.18.0\html\images\nc14.jpg" width="600" height="615"/>
+    <img src="D:\nginx-1.18.0\html\images\nc15.jpg" width="600" height="615"/>
+    <img src="D:\nginx-1.18.0\html\images\nc16.jpg" width="600" height="615"/>
+</div>
+
+</body>
+</html>
